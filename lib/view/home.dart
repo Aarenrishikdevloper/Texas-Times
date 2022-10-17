@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
          description: element["description"],
          urltoimage: element["urlToImage"],
          articleurl: element["url"],
-         content:  element["content"],
+         
 
        );
        newslist.add(article);
@@ -117,7 +117,7 @@ class _HomeState extends State<Home> {
                         imgurl: newslist[index].urltoimage ,
                         title: newslist[index].title,
                         desc: newslist[index].description,
-                        content: newslist[index].content,
+                        
                         posturl: newslist[index].articleurl,
                       );
 
@@ -177,7 +177,7 @@ class Categorycard extends StatelessWidget {
   }
 }
 class Newstile extends StatelessWidget {
-  final String imgurl, title, desc , content, posturl;
+  final String imgurl, title, desc, posturl;
   const Newstile({Key? key, required this.imgurl, required this.title, required this.desc, required this.content, required this.posturl}) : super(key: key);
 
   @override
